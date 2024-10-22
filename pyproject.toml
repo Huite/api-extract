@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "api_summarize"
+description = "Extract API summaries from Python packages"
+readme = { file = "README.rst", content-type = "text/x-rst"}
+dynamic = ["version"]
+maintainers = [
+    { name = "Huite Bootsma", email = "huite.bootsma@deltares.nl" }
+]
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[tool.pixi.dependencies]
+imod = "*"
+pandamesh = "*"
+
