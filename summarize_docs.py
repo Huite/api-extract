@@ -135,6 +135,7 @@ def create_docstring_summary(
 if __name__ == "__main__":
     prefix = "summary"
     paths = [
+        r"c:\src\imod-python\docs\api\mf6.rst",
         r"c:\src\imod-python\docs\api\visualize.rst",
         r"c:\src\imod-python\docs\api\prepare.rst",
         r"c:\src\imod-python\docs\api\util.rst",
